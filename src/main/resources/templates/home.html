@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Головна сторінка</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+
+</head>
+
+<body>
+<header th:insert="blocks/header::header"></header>
+<body id="home">
+<!-- Header -->
+<header id="showcase">
+    <div class="showcase-content">
+        <h1 class="l-heading">
+            VAG-Service — сервіс онлайн запису на автосеріс
+        </h1>
+        <p class="lead">
+            Автосервіс для автомобілів концерну VAG
+        </p>
+            <a href="#appointment" class="btn">
+                Записатися
+            </a>
+    </div>
+</header>
+
+<!-- Services -->
+<section id="services" class="bg-light py-1 offset">
+    <div class="container">
+        <h2 class="m-heading text-center">
+            <span class="text-primary"> Наші</span> Послуги
+        </h2>
+        <div class="items">
+            <div class="item">
+                <a href="#appointment"><img src="logo/diagnostic.jpeg" alt="Не вдалося загрузити"></a>
+                <h3>Діагностика</h3>
+            </div>
+            <div class="item">
+                <a href="#appointment"><img src="logo/engine_repair.jpeg" alt="Не вдалося загрузити"></a>
+                <h3>Ремонт двигуна</h3>
+            </div>
+            <div class="item">
+                <a href="#appointment"><img src="logo/tire_fitting.jpeg" alt="Не вдалося загрузити"></a>
+                <h3>Шиномонтаж</h3>
+            </div>
+            <div class="item">
+                <a href="#appointment"><img src="logo/repair.jpeg" alt="Не вдалося загрузити"></a>
+                <h3>Кузовний ремонт</h3>
+            </div>
+            <div class="item">
+                <a href="#appointment"><img src="logo/chip_tuning.jpeg" alt="Не вдалося загрузити"></a>
+                <h3>Чіп-тюнінг</h3>
+            </div>
+            <div class="item">
+                <a href="#appointment"><img src="logo/repair_mkpp.jpeg" alt="Не вдалося загрузити"></a>
+                <h3>Ремонт коробки передач</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="m-heading text-center">
+            <span class="text-primary">З якими автомобілями</span> ми працюємо
+        </h2>
+        <div class="car-brand"><img src="logo/cars.jpg" alt="Фото недоступно"></div>
+    </div>
+</section>
+
+<!-- About-->
+<section id="about" class="offset">
+    <div class="who-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Про</span> нас</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+            laboriosam voluptate. Incidunt, eos nostrum saepe vero dolorum
+            exercitationem! Dolor culpa facere ex voluptatem tempore illo
+            exercitationem adipisci rerum, non illum. Laborum ducimus dolorem quam
+            praesentium deserunt, culpa laudantium officiis eligendi nesciunt
+            ipsum aut libero ex nemo velit repellendus asperiores! At nisi laborum
+            eos fuga harum, dolore excepturi laboriosam sint ratione! Ea ullam,
+            eligendi consequuntur similique nisi aliquid placeat numquam hic
+            expedita accusantium debitis aut mollitia pariatur! Non in eveniet
+            sed, explicabo voluptate itaque deleniti magnam autem qui eaque ex
+            similique.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+            laboriosam voluptate. Incidunt, eos nostrum saepe vero dolorum
+            exercitationem! Dolor culpa facere ex voluptatem tempore illo
+            exercitationem adipisci rerum, non illum. Laborum ducimus dolorem quam
+            praesentium deserunt, culpa laudantium officiis eligendi nesciunt
+            ipsum aut libero ex nemo velit repellendus asperiores! At nisi laborum
+            eos fuga harum, dolore excepturi laboriosam sint ratione! Ea ullam,
+            eligendi consequuntur similique nisi aliquid placeat numquam hic
+            expedita accusantium debitis aut mollitia pariatur! Non in eveniet
+            sed, explicabo voluptate itaque deleniti magnam autem qui eaque ex
+            similique.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+            laboriosam voluptate. Incidunt, eos nostrum saepe vero dolorum
+            exercitationem! Dolor culpa facere ex voluptatem tempore illo
+            exercitationem adipisci rerum, non illum. Laborum ducimus dolorem quam
+            praesentium deserunt, culpa laudantium officiis eligendi nesciunt
+            ipsum aut libero ex nemo velit repellendus asperiores! At nisi laborum
+            eos fuga harum, dolore excepturi laboriosam sint ratione! Ea ullam,
+            eligendi consequuntur similique nisi aliquid placeat numquam hic
+            expedita accusantium debitis aut mollitia pariatur! Non in eveniet
+            sed, explicabo voluptate itaque deleniti magnam autem qui eaque ex
+            similique.
+
+        </p>
+
+        <h3 class="m-heading text-primary">Наші переваги</h3>
+        <ul class="list">
+            <li>Постійним клієнтам даруємо знижку на всі види послуг</li>
+            <li>Кваліфіковані майстри і професіонали своєї справи</li>
+            <li>Ремонт любої складності здійснюється в короткий термін</li>
+            <li>Yana Smith: Senior Accountant</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Appointment -->
+<section id="appointment" class="py-1 offset">
+    <div class="container">
+        <h2 class="m-heading text-center">
+            <span class="text-primary">Записатися</span> на діагностику
+        </h2>
+        <div class="items py-1">
+            <p>Please use this form to contact us</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Phone Number" />
+                </div>
+                <div class="form-group">
+                    <label for="name">Mwssage</label>
+                    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn btn-dark">
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts -->
+<section id="contacts" class="offset">
+    <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Контакти</h2>
+
+
+        <p id="graphicraboti">
+        <h2 class="m-heading">Графік</h2>
+            Графік работи: <br> ПН-ПТ 09:00 - 20:00<br>СБ 10:00 - 17:00 <br> НД - Вихідний </p>
+
+
+
+    </div>
+    <div id="map"></div>
+</section>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyabG_wkTtJW1vEw7tfcUD2iLMj1Romk&callback=initMap"  async defer></script>
+</body>
+
+</html>
+
+
+
+
+
+</div>
+
+<footer th:insert="blocks/footer::footer"></footer>
+</body>
+</html>
