@@ -113,61 +113,81 @@
         <h2 class="m-heading text-center">
             <span class="text-primary">Записатися</span> на діагностику
         </h2>
-        <div class="items py-1">
-            <p>Please use this form to contact us</p>
+        <div class="appoint">
             <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Name" />
+                <div class="appoint-container">
+                <div class="user-appointment">
+                    <div class="form-group">
+                        <label for="name">Ім'я</label>
+                    <input type="text" name="name" id="name" placeholder="Введіть ваше ім'я" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Прізвище</label>
+                    <input type="text" name="surname" id="surname" placeholder="Введіть ваше прізвище" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                    <input type="text" name="phone" id="phone" placeholder="Введіть номер телефону" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Введіть ваш email" required/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter Email" />
+
+                <div class="car-appointment">
+                    <div class="form-group">
+                        <label for="name" style="margin-right:50px">Введіть марку автомобіля</label>
+                        <input type="text" name="car" id="car" placeholder="Марка авто" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Виберіть СТО</label>
+                        <input type="text" name="station" id="station" placeholder="Виберіть СТО" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Виберіть дату</label>
+                        <input type="date" name="date" id="date" placeholder="Виберіть дату" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Виберіть час</label>
+                        <input type="time" name="time" id="time" placeholder="Виберіть час" required/>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter Phone Number" />
                 </div>
-                <div class="form-group">
-                    <label for="name">Mwssage</label>
-                    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
-                </div>
-                <input type="submit" value="Send Message" class="btn btn-dark">
+                    <div class="form-group" style="display:flex; justify-content:space-evenly; width:60%; padding-bottom:2rem;">
+                        <label for="name">Назва послуги</label>
+                        <textarea name="service" id="service" style="background-color:#d8f5b8" placeholder="Введіть назву послуги, поломки" required></textarea>
+                    </div>
+
+                    <input type="submit" value="Записатися" class="btn btn-dark">
             </form>
         </div>
     </div>
+
 </section>
 
 <!-- Contacts -->
 <section id="contacts" class="offset">
-    <div class="contact-form bg-primary p-2">
-        <h2 class="m-heading">Контакти</h2>
-
-
-        <p id="graphicraboti">
-        <h2 class="m-heading">Графік</h2>
-            Графік работи: <br> ПН-ПТ 09:00 - 20:00<br>СБ 10:00 - 17:00 <br> НД - Вихідний </p>
-
-
-
+    <div class="contact bg-primary" style="display:flex; justify-content: center;">
+        <div class="contact-form  p-2">
+            <h2 class="m-heading">Контакти</h2>
+            <p>вул. Миколи Грінченка 18б, Київ, 03039</p>
+            <p>new.vag.service@gmail.com</p>
+        </div>
+        <div class="contact-form  p-2">
+            <h2 class="m-heading">Графік</h2>
+            <p>Графік работи: <br> ПН-ПТ 09:00 - 20:00<br>СБ 10:00 - 17:00 <br> НД - Вихідний </p>
+        </div>
+        <div class="contact-form  p-2">
+            <h2 class="m-heading">Де ми знаходимось</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.5764905810875!2d30.516788915004827!3d50.41172989803634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3a3b48909b%3A0x685f61b53a61434f!2sVAG-Service!5e0!3m2!1suk!2sua!4v1645552228814!5m2!1suk!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>
     </div>
-    <div id="map"></div>
 </section>
 
-<script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtyabG_wkTtJW1vEw7tfcUD2iLMj1Romk&callback=initMap"  async defer></script>
+
 </body>
-
+</body>
 </html>
-
-
-
-
-
 </div>
 
 <footer th:insert="blocks/footer::footer"></footer>

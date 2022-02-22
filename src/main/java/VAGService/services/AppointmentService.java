@@ -1,6 +1,6 @@
 package VAGService.services;
 
-import VAGService.entity.User;
+import VAGService.entity.Appointment;
 import VAGService.repository.AppointmentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ public class AppointmentService {
     private AppointmentRepository appointmentRepository;
 
     public void createUser(String name, String surname, String phoneNumber,String email){
-        User user = new User();
+        Appointment user = new Appointment();
         user.setName(name);
         user.setSurname(surname);
         user.setPhoneNumber(phoneNumber);

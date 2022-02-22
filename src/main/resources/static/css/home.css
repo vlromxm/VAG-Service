@@ -226,14 +226,17 @@ overflow: hidden;
 
 /* About */
 
-#about {
+#who {
   display: flex;
 }
 
-#about div {
+#who div {
   flex: 1;
 }
 
+#who .who-img {
+  background: url('../img/logos/people.jpg') no-repeat center center/cover;
+}
 
 /* Clients */
 #clients .items {
@@ -247,31 +250,58 @@ overflow: hidden;
   margin: auto;
 }
 
-/* Form */
-#contact {
-  display: flex;
+/* Appointment Form */
+.appoint{
+margin-bottom:4rem;
+position: center;
+width: 100%;
+padding: 32px;
+border-radius:10px;
+box-shadow: 0 4px 20px #93cb52;
+}
+.appoint form{
+display: flex;
+flex-direction:column;
+justify-content;center;
+align-items:center;
+}
+.appoint form input{
+background-color: #d8f5b8;
 }
 
-#contact #map, #contact .contact-form {
-  flex: 1;
+
+.appoint .appoint-container{
+display:flex;
+width:100%;
+margin-bottom:2rem;
+justify-content:space-between;
+align-items: center;
 }
 
-#contact .contact-form .form-group {
-  margin: 0.75rem;
+
+.appoint .appoint-container .user-appointment{
+width:30%;
+}
+.appoint .appoint-container .car-appointment{
+margin-right:5%;
+}
+.appoint .appoint-container .user-appointment .form-group,
+.appoint .appoint-container .car-appointment .form-group{
+display: flex;
+justify-content:space-between;
+width: 100%
 }
 
-#contact .contact-form label {
-  display: block;
+/* Contact  */
+ /*.contact{
+display:flex;
+justify-content:center;
+width:100%
 }
 
-#contact .contact-form input,
-#contact .contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-}
-#graphicraboti{
-text-align:right;
-}
+
+input: required{}
+
 
 /* Footer */
 #main-footer {

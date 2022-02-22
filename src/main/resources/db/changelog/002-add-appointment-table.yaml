@@ -1,11 +1,11 @@
 databaseChangeLog:
   - changeSet:
-      id: create table with users
+      id: create table with appointments
       author: vladyslavromanenkoo@gmail.com
       changes:
         - createTable:
             schemaName: vag
-            tableName: user
+            tableName: appointment
             columns:
               - column:
                   name: id
@@ -21,8 +21,23 @@ databaseChangeLog:
                   name: surname
                   type: text
               - column:
-                  name: phone_number
+                  name: phone
                   type: text
               - column:
                   name: email
                   type: text
+              - column:
+                  name: car
+                  type: text
+              - column:
+                  name: service
+                  type: text
+              - column:
+                  name: station
+                  type: text
+              - column:
+                  name: date
+                  type: date
+              - column:
+                  name: time
+                  type: time

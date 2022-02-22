@@ -1,7 +1,7 @@
 package VAGService.repository;
 
-import VAGService.entity.User;
+import VAGService.entity.Appointment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AppointmentRepository extends JpaRepository<User,Long> {
+public interface AppointmentRepository extends JpaRepository<Appointment,Long> {
 }
