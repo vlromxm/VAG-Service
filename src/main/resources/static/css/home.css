@@ -226,17 +226,14 @@ overflow: hidden;
 
 /* About */
 
-#who {
+#about {
   display: flex;
 }
 
-#who div {
+#about div {
   flex: 1;
 }
 
-#who .who-img {
-  background: url('../img/logos/people.jpg') no-repeat center center/cover;
-}
 
 /* Clients */
 #clients .items {
