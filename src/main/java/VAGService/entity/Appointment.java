@@ -25,7 +25,7 @@ public class Appointment {
 
     private String surname;
 
-    private String phoneNumber;
+    private String phone;
 
     private String email;
 

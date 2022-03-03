@@ -120,6 +120,7 @@ p {
 .bg-primary {
   background: #7ab436;
   color: #F4F4F4;
+
 }
 
 .list {
@@ -252,12 +253,13 @@ overflow: hidden;
 
 /* Appointment Form */
 .appoint{
+background-color: #d2f0b0;
 margin-bottom:4rem;
 position: center;
 width: 100%;
 padding: 32px;
 border-radius:10px;
-box-shadow: 0 4px 20px #93cb52;
+box-shadow: 0 4px 20px #dfdfdf;
 }
 .appoint form{
 display: flex;
@@ -266,31 +268,62 @@ justify-content;center;
 align-items:center;
 }
 .appoint form input{
-background-color: #d8f5b8;
 }
 
+.appoint form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+.appoint form .form-group label{
+    font-weight: 700;
+    font-size: 15px;
+}
+.appoint form .form-group textarea{
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
 
 .appoint .appoint-container{
-display:flex;
-width:100%;
-margin-bottom:2rem;
-justify-content:space-between;
-align-items: center;
+    display:flex;
+    width:100%;
+    margin-bottom:2rem;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 3rem;
 }
-
 
 .appoint .appoint-container .user-appointment{
-width:30%;
+width:50%;
+margin-right:2rem;
 }
 .appoint .appoint-container .car-appointment{
-margin-right:5%;
+    width:50%;
+    margin-left:2rem;
 }
+
 .appoint .appoint-container .user-appointment .form-group,
 .appoint .appoint-container .car-appointment .form-group{
-display: flex;
-justify-content:space-between;
-width: 100%
+    margin-bottom:1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width: 100%
 }
+.appoint .appoint-container .user-appointment .form-group label,
+.appoint .appoint-container .car-appointment .form-group label{
+    width:40%;
+    font-weight:700;
+    font-size:15px;
+}
+.appoint .appoint-container .user-appointment .form-group input,
+.appoint .appoint-container .car-appointment .form-group input{
+    padding: 0.3rem;
+    width:60%;
+}
+
 
 /* Contact  */
  /*.contact{
@@ -305,5 +338,4 @@ input: required{}
 
 /* Footer */
 #main-footer {
-
 }

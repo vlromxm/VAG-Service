@@ -10,11 +10,11 @@ public class AppointmentService {
     @Autowired
     private AppointmentRepository appointmentRepository;
 
-    public void createUser(String name, String surname, String phoneNumber,String email){
+    public void createUser(String name, String surname, String phone,String email){
         Appointment user = new Appointment();
         user.setName(name);
         user.setSurname(surname);
-        user.setPhoneNumber(phoneNumber);
+        user.setPhone(phone);
         user.setEmail(email);
         appointmentRepository.save(user);
     }
